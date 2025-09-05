@@ -4,13 +4,13 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-/*import Home from "./components/Home";*/
+import Home from "./components/Home";
 
 export default function App() {
   return (
     <main>
       <Navbar />
-      
+      <Home />
       <AboutMe />
       <Projects />
       <Contact />
