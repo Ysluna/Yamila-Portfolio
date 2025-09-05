@@ -1,12 +1,15 @@
 import { projects } from "../data/projects";
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <div>
-      {projects.map(project => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </div>
+    <section id="projects" className="min-h-screen p-8">
+      <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
   );
 }
