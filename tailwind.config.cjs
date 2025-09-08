@@ -10,13 +10,19 @@ module.exports = {
     extend: {
       fontFamily: {
         pirata: ['"Pirata One"', ...defaultTheme.fontFamily.sans],
-        playfair: ['"Playfair Display"', ...defaultTheme.fontFamily.serif],
-        meie: ['"Meie Script"', ...defaultTheme.fontFamily.serif],
+        news: ['"Newsreader"', ...defaultTheme.fontFamily.serif],
+        kapakana: ['"Kapakana"', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         dark: '#503d41',
         light: '#f1eee9',
         pink: '#f9bdc1',
+      },
+      fontSize: {
+        '10xl': '10rem',
+        '11xl': '12rem',
+        '12xl': '14rem',
+        '13xl': '16rem',
       },
     },
   },
